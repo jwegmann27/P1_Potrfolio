@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Links and Title-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IE give best options-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--for mobile device-->
+    <title>Project 1: Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--my css-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet'>
+    <!--google fonts-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!--js for modals-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--bootstrap js-->
+</head>
+
+<body>
+    <main class="container">
+        <!--everything needs to be in container for bs-->
+        <header class="row">
+            <section class="col-md-4">
+                <!--logo-->
+                <img class="img-responsive title-logo" src="pics/initals.png" alt="Website Logo">
+                <!--I want to use srcset but I dont have multiple sizes for this image :(-->
+            </section>
+            <section class="col-md-8 title-header">
+                <!--name-->
+                <h1>Joseph Wegmann</h1>
+                <h3>Full Time Thinker</h3>
+            </section>
+        </header>
+        <header class="row">
+            <section class="col-md-12">
+                <!--bar before main pic-->
+                <hr>
+            </section>
+        </header>
+        <article class="row">
+            <!--main pic-->
+            <section class="col-md-12">
+                <img class="img-responsive" src="http://placekitten.com/1250/500" alt="It's a kitten">
+            </section>
+        </article>
+        <header class="row">
+            <section class="col-md-12">
+                <h3 class="text-muted work-header">Featured Work</h3>
+            </section>
+        </header>
+        <article class="row text-center">
+            <!--all the project tiles-->
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 1" data-toggle="modal" data-target="#project1">
+                <h4 class="text-uppercase">Portfolio Site</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 2" data-toggle="modal" data-target="#project2">
+                <h4 class="text-uppercase">Online Resume</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 3" data-toggle="modal" data-target="#project3">
+                <h4 class="text-uppercase">Classic Arcade Game Clone</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+        </article>
+        <article class="row text-center">
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 4">
+                <h4 class="text-uppercase">Website Optimization</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 5">
+                <h4 class="text-uppercase">Neighborhood Map Project</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+            <section class="col-md-4">
+                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 6">
+                <h4 class="text-uppercase">Feed Reader Testing</h4>
+                <a href="https://github.com/">Link to Project</a>
+            </section>
+        </article>
+        <footer class="row">
+            <!--I put this in for extra req. even though it doesnt look nice for page-->
+            <section class="col-md-12">
+                <nav class="dropdown drop-box">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Additional References
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="https://www.linkedin.com/in/joseph-wegmann-8001aab2">LinkedIn Profile</a>
+                        </li>
+                    </ul>
+                    <p></p>
+                    <!--these p tags are just for spacing because when i use padding-bottom the drop menu reacts wierd-->
+                </nav>
+            </section>
+        </footer>
+    </main>
+
+    <!-- Modal 1-->
+    <article class="modal fade" id="project1" tabindex="-1">
+        <!-- role="dialog"aria-labelledby="myModalLabel" aria-hidden="true"-->
+        <section class="modal-dialog">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">P1: Portfolio Site</h4>
+                </section>
+                <section class="modal-body">
+                    <p>In this project I developed a responsive website that displays the projects I will be completing within the Udacity course.</p>
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </section>
+            </section>
+        </section>
+    </article>
+
+    <!-- Modal 2-->
+    <article class="modal fade" id="project2" tabindex="-1">
+        <section class="modal-dialog" role="document">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">P2: Online Resume</h4>
+                </section>
+                <section class="modal-body">
+                    <p>Created an online resume to diplay front end web development skills.</p>
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </section>
+            </section>
+        </section>
+    </article>
+
+    <!-- Modal 3-->
+    <article class="modal fade" id="project3" tabindex="-1">
+        <section class="modal-dialog" role="document">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">P3: Classic Arcade Game Clone</h4>
+                </section>
+                <section class="modal-body">
+                    <p>Recreated Fallout 4 in two days using only javasccript becuase I am a robot from the future.</p>
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </section>
+            </section>
+        </section>
+    </article>
+</body>
+
+</html>

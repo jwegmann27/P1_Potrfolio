@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border-top: 3px solid #000;
+}
+
+.title-logo {
+    padding-top: 20px;
+}
+
+.title-header {
+    padding-bottom: 40px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 300;
+}
+
+.work-header {
+    color: #bcbbbb;
+    font-size: 32px;
+}
+
+.drop-box {
+    padding-top: 30px;
+}
