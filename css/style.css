@@ -8,11 +8,15 @@ hr {
 
 .title-logo {
     padding-top: 20px;
+    padding-right: 0px;
+    max-width: 35%;
 }
 
 .title-header {
+    max-width: 65%;
     padding-bottom: 40px;
     padding-top: 30px;
+    margin-right: 0px;
     text-transform: uppercase;
     text-align: right;
     font-weight: 300;
@@ -25,4 +29,13 @@ hr {
 
 .drop-box {
     padding-top: 30px;
+}
+
+@media (max-width: 995px){
+    .title-logo {
+        max-width: 0%;
+    }
+    .title-header {
+        max-width: 100%
+    }
 }
