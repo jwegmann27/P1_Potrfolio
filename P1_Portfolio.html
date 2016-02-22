@@ -25,15 +25,14 @@
     <main class="container">
         <!--everything needs to be in container for bs-->
         <header class="row">
-            <section class="col-md-4">
+            <section class="col-md-4 title-logo">
                 <!--logo-->
-                <img class="img-responsive title-logo" src="pics/initals.png" alt="Website Logo">
-                <!--I want to use srcset but I dont have multiple sizes for this image :(-->
+                <img class="img-responsive" src="http://placehold.it/200x200" alt="Website Logo">
             </section>
             <section class="col-md-8 title-header">
                 <!--name-->
-                <h1>Joseph Wegmann</h1>
-                <h3>Full Time Thinker</h3>
+                <h1 class="text-right">Joseph Wegmann</h1>
+                <h3 class="text-right">Front End Web Developer</h3>
             </section>
         </header>
         <header class="row">
@@ -45,7 +44,7 @@
         <article class="row">
             <!--main pic-->
             <section class="col-md-12">
-                <img class="img-responsive" src="http://placekitten.com/1250/500" alt="It's a kitten">
+                <img class="img-responsive" src="images/headerpic-large.PNG" alt="Header Image">
             </section>
         </article>
         <header class="row">
@@ -56,36 +55,36 @@
         <article class="row text-center">
             <!--all the project tiles-->
             <section class="col-md-4">
-                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 1" data-toggle="modal" data-target="#project1">
-                <h4 class="text-uppercase">Portfolio Site</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <img class="img-responsive center-block" src="images/portfolioproj-small.PNG" alt="Project Picture 1" data-toggle="modal" data-target="#project1">
+                <h4 class="text-uppercase">Project 1: Portfolio Website</h4>
+                <a href="https://github.com/jwegmann27/P1_Potrfolio.git">https://github.com/jwegmann27/P1_Potrfolio.git</a>
             </section>
             <section class="col-md-4">
-                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 2" data-toggle="modal" data-target="#project2">
-                <h4 class="text-uppercase">Online Resume</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <img class="img-responsive center-block" src="images/resume-small.PNG" alt="Project Picture 2" data-toggle="modal" data-target="#project2">
+                <h4 class="text-uppercase">Project 2: Online Resume</h4>
+                <a href="https://github.com/jwegmann27/frontend-nanodegree-resume.git">https://github.com/jwegmann27/frontend-nanodegree-resume.git</a>
             </section>
             <section class="col-md-4">
-                <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 3" data-toggle="modal" data-target="#project3">
-                <h4 class="text-uppercase">Classic Arcade Game Clone</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <img class="img-responsive center-block" src="images/arcade-game-small.PNG" alt="Project Picture 3" data-toggle="modal" data-target="#project3">
+                <h4 class="text-uppercase">Project 3: Classic Arcade Game Clone</h4>
+                <a href="https://github.com/jwegmann27/frontend-nanodegree-arcade-game.git">https://github.com/jwegmann27/frontend-nanodegree-arcade-game.git</a>
             </section>
         </article>
         <article class="row text-center">
             <section class="col-md-4">
                 <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 4">
                 <h4 class="text-uppercase">Website Optimization</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <a href="https://github.com/jwegmann27">Coming Soon</a>
             </section>
             <section class="col-md-4">
                 <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 5">
                 <h4 class="text-uppercase">Neighborhood Map Project</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <a href="https://github.com/jwegmann27">Coming Soon</a>
             </section>
             <section class="col-md-4">
                 <img class="img-responsive center-block" src="http://placehold.it/350x200" alt="Project Picture 6">
                 <h4 class="text-uppercase">Feed Reader Testing</h4>
-                <a href="https://github.com/">Link to Project</a>
+                <a href="https://github.com/jwegmann27">Coming Soon</a>
             </section>
         </article>
         <footer class="row">
@@ -116,7 +115,7 @@
                     <h4 class="modal-title" id="myModalLabel1">P1: Portfolio Site</h4>
                 </section>
                 <section class="modal-body">
-                    <p>In this project I developed a responsive website that displays the projects I will be completing within the Udacity course.</p>
+                    <p>In this project I developed a responsive website that displays the projects I will be completing within the Udacity course.<br><a href="https://github.com/jwegmann27/P1_Potrfolio.git">https://github.com/jwegmann27/P1_Potrfolio.git</a></p>
                 </section>
                 <section class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -133,7 +132,7 @@
                     <h4 class="modal-title" id="myModalLabel2">P2: Online Resume</h4>
                 </section>
                 <section class="modal-body">
-                    <p>Created an online resume to diplay front end web development skills.</p>
+                    <p>Created an online resume to diplay front end web development skills.<br><a href="https://github.com/jwegmann27/frontend-nanodegree-resume.git">https://github.com/jwegmann27/frontend-nanodegree-resume.git</a></p>
                 </section>
                 <section class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -150,7 +149,7 @@
                     <h4 class="modal-title" id="myModalLabel3">P3: Classic Arcade Game Clone</h4>
                 </section>
                 <section class="modal-body">
-                    <p>Recreated Fallout 4 in two days using only javasccript becuase I am a robot from the future.</p>
+                    <p>Programmed a frogger-esque game in JavaScript. This project was geared towards learning the fundamentals of object oriented JavaScript.<br><a href="https://github.com/jwegmann27/frontend-nanodegree-arcade-game.git">https://github.com/jwegmann27/frontend-nanodegree-arcade-game.git"</a></p>
                 </section>
                 <section class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
